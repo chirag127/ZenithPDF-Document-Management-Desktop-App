@@ -1,54 +1,36 @@
-# -----------------------------------------------------------------------------
-# APEX IGNORE FILE STANDARD (AIFS) - ZenithPDF-Client-Side-Document-Management-Desktop-App
-# Generated for TypeScript + Vite + Tauri/Rust Stack (2026 Standard)
-# -----------------------------------------------------------------------------
-
-# --- Dependency Artifacts (Node/JS/uv) ---
-/node_modules
-/uv/
-
-# --- Build & Output Artifacts (Vite/TypeScript) ---
-/dist
-/build
-/out
-.vite/
-.output/
-
-# --- Environment Variables ---
+# Node / Vite / Tauri specific
+npm-debug.log*
+npm-debug.log
+yarn-debug.log*
+yarn-debug.log
+yarn-error.log*
+yarn-error.log
+node_modules/
+dist/
 .env
-.env.*
-!.env.example
-
-# --- Tauri/Rust Specific Artifacts ---
-# Rust target directory
-/target
-# Tauri-specific build and bundle outputs
-/src-tauri/target/
-/src-tauri/target-debug/
-/dist-tauri/
-/bundle/
-*.log
-
-# --- Testing and Coverage ---
-/coverage
-/.nyc_output
-/test-results
-
-# --- IDE/OS Artifacts ---
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+# Tauri 
+src-tauri/gen/
+src-tauri/target/
+# Build artifacts
+.output/
+# IDE specific
+.vscode/
 .idea/
-.vscode/*
-# Keep essential VSCode settings for team coherence
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/
-*.swp
-*~
+*.iml
+# OS specific
 .DS_Store
 Thumbs.db
-
-# --- Lock Files (Typically committed, but ignored if explicitly requested for clean testing) ---
-# package-lock.json (Keep)
-# yarn.lock (Keep)
-# Cargo.lock (Keep for deterministic Rust builds)
+# Logs
+*.log
+# Editor directories and files
+.project
+.settings/
+.sublime-project
+.sublime-workspace
+# TypeScript / JavaScript specific
+*.tsbuildinfo
