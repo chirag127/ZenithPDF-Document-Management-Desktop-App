@@ -1,61 +1,32 @@
----
-name: Bug Report
-about: Report an issue with Zenith-PDF-Document-Management-Platform
-title: "[BUG]: Short, descriptive title"
-labels: ["bug", "triage"]
-assignees: ""
+# Bug Report
 
----
+Thank you for taking the time to report a bug. Please provide as much detail as possible to help us diagnose and fix the issue.
 
-## 🐛 Symptom Description
+**To Reproduce**
 
-**BLUF (Bottom Line Up Front):** Describe the bug in one concise sentence.
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
---- 
+**Expected Behavior**
 
-### 🎯 Expected Behavior
+A clear and concise description of what you expected to happen.
 
-What *should* have happened when you performed the action?
+**Screenshots**
 
-### 🛑 Actual Behavior
+If applicable, add screenshots to help explain your problem.
 
-What *actually* happened? Include error messages, unexpected UI shifts, or incorrect outputs.
+**Environment**
 
-### 🔬 Steps to Reproduce
+*   **App Version:** (e.g., `1.0.0`)
+*   **Operating System:** (e.g., `Windows 10`, `macOS Sonoma 14.2`, `Ubuntu 22.04`)
+*   **Tech Stack:**
+    *   **Language:** TypeScript
+    *   **Bundler/Framework:** Vite
+    *   **Runtime:** Tauri v2.x
 
-Provide a clear, numbered sequence of actions that reliably triggers this bug. **Zero ambiguity allowed.**
+**Additional Context**
 
-1.  Navigate to `/path/to/feature`.
-2.  Ensure configuration XYZ is set.
-3.  Click the [Action Button].
-4.  Observe outcome Y.
-
-### 🛠 Environment & Context
-
-**This information is critical for debugging and adheres to the Apex Standard.**
-
-*   **Platform:** (e.g., Desktop App via Tauri, Web Browser via Vite/SPA)
-*   **OS & Version:** (e.g., macOS Sonoma 14.1, Windows 11 23H2)
-*   **Browser (if applicable):** (e.g., Chrome 120.0, Firefox 119.0)
-*   **Zenith PDF Version/Build Hash:** (If known, e.g., `v1.2.0-alpha.4` or `a3b1c9d`)
-*   **Specific PDF Input:** (e.g., File size, content complexity, password protected? Attach sample if safe.)
-
-### 🖼️ Visual Evidence
-
-(Attach screenshots or screen recordings demonstrating the faulty state.)
-
-### 💡 Proposed Fix (Optional)
-
-If you have an idea for the solution, please describe it. We prioritize fixes that align with **SOLID principles** and **CQS separation**.
-
----
-
-<details>
-<summary>🤖 AI Agent Directive Context (LATE 2025 Standard)</summary>
-
-**Project Stack Alignment:** TypeScript (Strict), Vite 7, Tauri v2.x, Biome, Vitest, Playwright.
-
-**Architectural Focus:** Ensuring component isolation (FSD adherence), strict type safety, and performance compliance (INP < 200ms).
-
-**Debugging Protocol:** Prioritize examining state management side-effects and asynchronous data flow logic (`Promise` chains or `Signals` updates) first. Run `biome check --error-on-warnings` locally before submission.
-</details>
+Add any other context about the problem here. You can reference the [ZenithPDF Project Documentation](https://github.com/chirag127/ZenithPDF-Document-Management-Desktop-App) for architectural details or [Apex Agent Directives](https://github.com/chirag127/ZenithPDF-Document-Management-Desktop-App/blob/main/AGENTS.md) for development standards.
