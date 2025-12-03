@@ -1,88 +1,125 @@
-# Pull Request Template
+# 🚀 Pull Request Template
 
-**Author:** @chirag127
-**Date:** 2025-12-18
+---*🚀 Pull Request Template*
 
-## 1. Pull Request Overview
+**Thank you for your contribution!** Please review the following guidelines before submitting your Pull Request.
 
-**Subject:** `[Feature/Fix/Chore]: Brief, descriptive summary of changes`
+## 🎯 Summary
 
-**Description:**
-Provide a concise explanation of the purpose of this pull request. What problem does it solve? What new functionality does it introduce? How does it align with the project's goals?
+*   **What is this PR about?** (Briefly describe the changes)
+*   **Why is this change needed?** (Link to issue if applicable)
 
-### 1.1. Problem Statement
+## ✅ Checklist
 
-*   Describe the issue or requirement this PR addresses.
+*   [ ] I have read and followed the contribution guidelines.
+*   [ ] My code follows the project's style guidelines (TypeScript, Vite, TailwindCSS, Tauri v2).
+*   [ ] My code passes linting and formatting checks.
+*   [ ] I have added tests that cover my changes.
+*   [ ] All new and existing tests pass.
+*   [ ] I have updated the documentation (if necessary).
+*   [ ] My changes do not introduce any breaking changes or have been clearly communicated.
 
-### 1.2. Solution Description
+## 🛠️ Technical Details
 
-*   Detail the changes made to resolve the problem or implement the feature.
-*   Explain the architectural decisions and their rationale.
+*   **Type of Change:** (e.g., Feature, Bugfix, Refactor, Chore, Docs, Style, Test)
+*   **Related Issue:** (e.g., `#123`)
+*   **Testing Performed:** (Describe how you tested your changes)
 
---- ## 2. Technical Details & Verification ## ---
+## 📚 Architecture & AI Agent Directives
 
-This section ensures adherence to the Apex Technical Authority's stringent standards.
+This PR adheres to the Apex Architecture principles for Desktop Applications:
 
-### 2.1. Key Changes
+<details>
+<summary>View AI Agent Directives</summary>
 
-*   **Code Modifications:** List major files or modules changed.
-*   **New Features:** Enumerate new capabilities added.
-*   **Bug Fixes:** Specify defects resolved.
-*   **Refactoring:** Mention any structural improvements without functional changes.
+## SYSTEM: APEX TECHNICAL AUTHORITY & ELITE ARCHITECT (DECEMBER 2025 EDITION)
 
-### 2.2. Verification Steps
+### 1. IDENTITY & PRIME DIRECTIVE
+**Role:** Senior Principal Software Architect, Master Technical Copywriter.
+**Context:** December 2025, building for 2026 standards.
+**Output Standard:** **EXECUTION-ONLY**.
+**Philosophy:** "Zero-Defect, High-Velocity, Future-Proof."
 
-*   **Local Testing:** Detail how to reproduce and verify the changes on a local development environment.
-    *   Example: `git fetch origin <branch-name> && git checkout <branch-name>`
-    *   Example: `npm install && npm run build && npm run preview` (or specific Tauri commands)
-*   **Automated Tests:** Confirm that all unit, integration, and end-to-end tests pass.
-    *   Example: `npm run test:unit`
-    *   Example: `npm run test:e2e`
-*   **Manual QA:** Outline specific scenarios to be manually tested by reviewers.
-    *   Scenario 1: ...
-    *   Scenario 2: ...
+### 2. INPUT PROCESSING & COGNITION
+*   **Semantic Correction:** Infer technical intent; **FORBIDDEN** from executing literal typos.
+*   **Logic Anchor:** `README.md` is the **Single Source of Truth (SSOT)**.
+*   **MANDATORY MCP INSTRUMENTATION:**
+    *   No Guessing.
+    *   **Research First:** Use `linkup`/`brave` for Dec 2025 Industry Standards, Security Threats, 2026 UI Trends.
+    *   **Validation:** Use `docfork` for external API signatures.
+    *   **Reasoning:** Engage `clear-thought-two` for complex flows before coding.
 
-### 2.3. Related Issues
+### 3. CONTEXT-AWARE APEX TECH STACKS (LATE 2025 STANDARDS)
+*   **PRIMARY SCENARIO: WEB / APP / GUI (Modern Frontend - This Repository's Context)**
+    *   **Stack:** **TypeScript 6.x** (Strict), **Vite 7** (Rolldown), **TailwindCSS v4**, **Tauri v2.x** (Native).
+    *   **Lint/Test:** **Biome** (Speed) + **Vitest** (Unit) + **Playwright** (E2E).
+    *   **Architecture:** **Feature-Sliced Design (FSD)**.
+    *   **State Management:** Standardized Signals.
+    *   **CLI Framework:** (N/A for this GUI app, but standard CLI tools apply if needed).
 
-*   Closes #<issue-number>
-*   References #<issue-number>
+### 4. CODE QUALITY & VERIFICATION
+*   **Linting & Formatting:** **Biome** is the sole source of truth. Run `npx @biomejs/biome format --write .` and `npx @biomejs/biome lint --apply .`.
+*   **Unit Testing:** **Vitest**.
+    *   Run: `npm run test:unit`.
+    *   Coverage Target: 95%.
+*   **End-to-End Testing:** **Playwright**.
+    *   Run: `npm run test:e2e`.
+*   **Build:** `npm run build`.
 
---- ## 3. Architectural & Compliance Checks ## ---
+### 5. SECURITY & PRIVACY MANDATES
+*   **Client-Side Focus:** All operations must remain client-side for maximum privacy.
+*   **Dependency Auditing:** Regularly audit dependencies using `npm audit` or equivalent.
+*   **Vulnerability Patching:** Address **critical** and **high** severity vulnerabilities immediately.
+*   **Data Handling:** NO sensitive data should leave the user's machine unless explicitly configured and consented.
 
-Adherence to the Apex Technical Authority's **DECEMBER 2025 EDITION** directives is mandatory.
+### 6. DEVELOPMENT PRINCIPLES
+*   **SOLID:** Ensure adherence.
+*   **DRY:** Avoid duplication.
+*   **YAGNI:** Build only what is needed.
+*   **Separation of Concerns:** Enforce FSD principles.
 
-### 3.1. APEX AI AGENT DIRECTIVES COMPLIANCE
+### 7. CONTRIBUTION GUIDELINES
+*   **Branching Strategy:** `feature/short-description`.
+*   **Commit Messages:** Conventional Commits (`feat:`, `fix:`, `refactor:`, etc.).
+*   **PRs:** Small, focused, and well-described.
 
-*   **Tech Stack Verification:** All code aligns with the **TypeScript/Vite/Tauri** stack as defined in the repository's `AGENTS.md`.
-*   **Architectural Patterns:** Features are implemented adhering to **Feature-Sliced Design (FSD)** principles. State management utilizes **Signals (Standardized)**. UI elements are styled with **TailwindCSS v4**.
-*   **Linting & Formatting:** Code is compliant with **Biome** standards.
-*   **Testing Frameworks:** **Vitest** (Unit) and **Playwright** (E2E) are utilized as per standard.
+</details>
 
-### 3.2. CODE QUALITY & BEST PRACTICES
+## 🌳 Project Structure (FSD)
 
-*   **SOLID Principles:** Applied rigorously.
-*   **DRY (Don't Repeat Yourself):** Ensured.
-*   **YAGNI (You Ain't Gonna Need It):** Features are only implemented if currently required.
-*   **Error Handling:** Robust error management is implemented (e.g., using `Result` types or equivalent).
-*   **Security:** No known vulnerabilities introduced. All dependencies are up-to-date and scanned.
+*(Ideally, this would be an ASCII tree or Mermaid diagram generated based on the actual project structure. Placeholder below.)*
 
-### 3.3. DOCUMENTATION
 
-*   **Code Comments:** Sufficient inline comments where necessary for complex logic.
-*   **README:** `README.md` is updated to reflect changes if significant.
-*   **AGENTS.md:** `AGENTS.md` remains accurate and reflects current stack/directives.
+project/
+├── src/
+│   ├── app/
+│   │   ├── main.ts
+│   │   └── ...
+│   ├── pages/
+│   │   ├── home/
+│   │   │   └── index.tsx
+│   │   └── ...
+│   ├── widgets/
+│   │   └── ...
+│   ├── features/
+│   │   ├── pdf-editing/
+│   │   │   └── ...
+│   │   ├── pdf-conversion/
+│   │   │   └── ...
+│   │   └── ...
+│   ├── entities/
+│   │   └── ...
+│   ├── shared/
+│   │   ├── ui/
+│   │   ├── lib/
+│   │   └── ...
+│   └── ...
+├── ...
 
---- ## 4. APPROVAL & REVIEW ## ---
 
-**Reviewer(s):**
-*   @
+## 📣 Notes for Reviewer
 
-**Approval Status:**
-*   [ ] Approved
-*   [ ] Changes Requested
+*(Add any specific comments or areas for the reviewer to focus on.)*
 
---- ## 5. DECLARATION OF CONFORMITY ## ---
-
-I hereby declare that this pull request conforms to the **Apex Technical Authority** standards, including the **DECEMBER 2025 EDITION** directives, and the specific requirements for this repository as outlined in `AGENTS.md`.
-
-**Developer Signature:** `@chirag127`
+---*   Please pay special attention to the implementation of the [specific feature/fix] in `src/features/pdf-editing/`.
+*   Reviewer: @[mention_reviewer]
