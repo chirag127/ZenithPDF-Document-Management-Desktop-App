@@ -1,95 +1,101 @@
-# 🤝 Contributing to ZenithPDF-Document-Management-Desktop-App
+# Contributing to ZenithPDF-Desktop-Document-Manager-Tauri-App
 
-Thank you for considering contributing to ZenithPDF! We welcome contributions of all kinds, from bug reports and feature requests to code contributions and documentation improvements.
+We welcome contributions to ZenithPDF-Desktop-Document-Manager-Tauri-App! As per Apex Technical Authority standards, we maintain a high bar for code quality, architectural integrity, and contribution clarity. Please adhere to the following guidelines.
 
-## 1. Our Development Standards
+## 1. Code of Conduct
 
-This project adheres to the **Apex Technical Authority Standards**, emphasizing **Zero-Defect, High-Velocity, Future-Proof** development.
-
-*   **Technology Stack:** TypeScript, Vite, Tauri (Late 2025 Standards)
-*   **Linting & Formatting:** Biome
-*   **Testing:** Vitest (Unit), Playwright (E2E)
-*   **Architecture:** Feature-Sliced Design (FSD)
-*   **Code Quality:** SOLID, DRY, YAGNI principles are paramount.
-*   **Version Control:** Gitflow workflow is recommended for feature development.
+This project adheres to the Contributor Covenant Code of Conduct. For more details, please see the `CODE_OF_CONDUCT.md` file. By participating, you are expected to uphold this code.
 
 ## 2. Getting Started
 
-1.  **Fork the Repository:** Create your own fork of the `chirag127/ZenithPDF-Document-Management-Desktop-App` repository.
-2.  **Clone Your Fork:** Clone your forked repository to your local machine:
-    bash
-    git clone https://github.com/chirag127/ZenithPDF-Document-Management-Desktop-App.git
-    cd ZenithPDF-Document-Management-Desktop-App
-    
-3.  **Set Upstream Remote:** Add the original repository as an upstream remote to keep your fork updated:
-    bash
-    git remote add upstream https://github.com/chirag127/ZenithPDF-Document-Management-Desktop-App.git
-    
-4.  **Install Dependencies:** Install project dependencies using Vite:
-    bash
-    npm install
-    
-5.  **Run in Development Mode:** Start the application with hot-reloading:
-    bash
-    npm run dev
-    
+Before you contribute, please ensure you have the following installed:
 
-## 3. Contribution Workflow
+*   **Node.js:** Version 18 or higher.
+*   **npm/yarn/pnpm:** Your preferred package manager.
+*   **Rust:** For Tauri development (Rustup recommended).
+*   **Tauri CLI:** `cargo install tauri-cli`.
 
-We follow a standard Git workflow:
+Clone the repository:
 
-1.  **Create a New Branch:** For every new feature or bug fix, create a descriptive branch from the `main` branch:
+bash
+git clone https://github.com/chirag127/ZenithPDF-Desktop-Document-Manager-Tauri-App.git
+cd ZenithPDF-Desktop-Document-Manager-Tauri-App
+
+
+Install dependencies:
+
+bash
+npm install
+# or yarn install, or pnpm install
+
+
+## 3. Development Workflow
+
+1.  **Fork the Repository:** Create your own fork of the `chirag127/ZenithPDF-Desktop-Document-Manager-Tauri-App` repository.
+2.  **Create a New Branch:** Make your changes on a descriptive branch (e.g., `feat/add-ocr-support`, `fix/incorrect-text-extraction`).
     bash
-    git checkout -b feature/your-feature-name
-    # or
-    git checkout -b fix/your-bug-description
+    git checkout -b my-feature-branch
     
-2.  **Make Your Changes:** Write your code, ensuring it adheres to project standards and includes relevant tests.
-3.  **Test Your Changes:** Run the test suite locally:
+3.  **Make Your Changes:** Implement your feature or fix. Ensure your code adheres to the project's architectural principles (e.g., adhering to the TypeScript best practices, Vite configuration, Tauri guidelines).
+4.  **Test Your Changes:** Run the test suite to ensure your changes haven't introduced regressions.
     bash
-    npm run test # For unit tests
-    npm run test:e2e # For end-to-end tests
-    
-4.  **Lint and Format:** Ensure your code is clean and well-formatted:
-    bash
+    # Run linters and formatters
     npm run lint
     npm run format
+
+    # Run unit tests
+      # (Example: Assuming Vitest is configured)
+    npm run test:unit
+
+    # Run E2E tests if applicable
+      # (Example: Assuming Playwright is configured)
+    npm run test:e2e
     
-5.  **Commit Your Changes:** Commit your changes with clear and concise messages. Use conventional commits if possible.
+5.  **Commit Your Changes:** Write clear, concise commit messages. Follow conventional commits if possible.
     bash
-    git add .
-    git commit -m "feat: Add user authentication module"
+    git commit -m "feat: Add new PDF merging functionality"
     
-6.  **Push Your Branch:** Push your branch to your fork:
+6.  **Push to Your Fork:** Push your branch to your fork.
     bash
-    git push origin HEAD
+    git push origin my-feature-branch
     
-7.  **Open a Pull Request (PR):** Open a Pull Request from your branch to the `main` branch of the `chirag127/ZenithPDF-Document-Management-Desktop-App` repository.
-    *   **PR Template:** Please fill out the Pull Request template completely.
-    *   **CI/CD:** Ensure all GitHub Actions checks pass.
+7.  **Submit a Pull Request:** Open a Pull Request from your feature branch to the `main` branch of the `chirag127/ZenithPDF-Desktop-Document-Manager-Tauri-App` repository.
 
-## 4. Pull Request Guidelines
+## 4. Architectural Principles
 
-*   **One Feature/Fix Per PR:** Keep PRs focused on a single logical change.
-*   **Descriptive Title & Body:** Clearly explain *what* your PR does and *why*.
-*   **Link Issues:** Reference any related issues using keywords like `Fixes #123` or `Closes #456`.
-*   **Code Reviews:** Be prepared to discuss your changes and address feedback from reviewers.
+*   **TypeScript (Strict Mode):** All TypeScript code must be written with strict type checking enabled. Aim for predictable, maintainable code.
+*   **Vite:** Leverage Vite's performance benefits for development and build processes.
+*   **Tauri v2:** Follow Tauri's best practices for building secure and performant desktop applications. Understand the security implications of client-side operations.
+*   **Feature-Sliced Design (FSD) / Modular Architecture:** Organize code into features, layers, and slices for scalability and maintainability. Refer to the project's `tree` diagram in the `README.md` for current structure.
+*   **SOLID Principles:** Adhere to SOLID principles in your code design.
+*   **DRY (Don't Repeat Yourself):** Avoid code duplication.
+*   **YAGNI (You Ain't Gonna Need It):** Focus on current requirements; avoid over-engineering for future, unconfirmed needs.
 
-## 5. Issue Reporting
+## 5. Testing
 
-When reporting an issue:
+*   **Unit Tests:** Write comprehensive unit tests for components, utilities, and business logic using Vitest.
+*   **End-to-End (E2E) Tests:** If applicable, write E2E tests using Playwright to simulate user interactions and validate critical workflows.
+*   **Coverage:** Aim for high code coverage. Ensure critical paths are well-tested.
 
-*   **Use the Issue Template:** File a bug report using the provided issue template (`.github/ISSUE_TEMPLATE/bug_report.md`).
-*   **Be Specific:** Provide clear, concise details about the problem, including steps to reproduce it.
-*   **Environment Details:** Include your OS, Node.js version, and any other relevant information.
-*   **Screenshots/GIFs:** If applicable, attach visual evidence.
+## 6. Pull Request Guidelines
 
-## 6. Code of Conduct
+*   **Single Responsibility:** Each PR should ideally address one specific issue or feature.
+*   **Clear Description:** Provide a detailed description of your changes, including the problem solved and the approach taken.
+*   **Link to Issue:** If your PR addresses an existing issue, please link to it (e.g., `Closes #123`).
+*   **CI/CD Checks:** Ensure all automated checks (linting, testing, building) pass before submitting your PR.
 
-This project adheres to a Code of Conduct. By participating, you are expected to uphold this Code. Please refer to the [CODE_OF_CONDUCT.md](https://github.com/chirag127/ZenithPDF-Document-Management-Desktop-App/blob/main/CODE_OF_CONDUCT.md) file for details.
+## 7. Reporting Issues
 
-## 7. Questions & Support
+When reporting an issue, please provide:
 
-If you have any questions, please open an issue or reach out on the project's discussion forum (if available).
+*   **Clear Title:** A concise summary of the problem.
+*   **Environment Details:** Operating System, Tauri version, Node.js version.
+*   **Steps to Reproduce:** Detailed, step-by-step instructions to trigger the bug.
+*   **Expected vs. Actual Behavior:** What you expected to happen and what actually happened.
+*   **Screenshots/Logs:** Attach any relevant visual aids or console logs.
 
-We appreciate your contributions!
+## 8. Architectural Decisions & AI Agent Directives
+
+Future contributions will be evaluated against the directives outlined in the `AGENTS.md` file. This ensures alignment with the project's strategic goals and technical vision. Adherence to these directives is mandatory for all contributions.
+
+Thank you for contributing to ZenithPDF!
